@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shoe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Style CSS file -->
+	<link href="css/style.css" rel="stylesheet" />
+	<!-- Font awesome -->
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Duka stores</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Men</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Women</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Kids</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Accessories</a>
+      </li>
+    </ul>
+    <a class="nav-link" href="#">
+     	<i class="fa fa-search" aria-hidden="true"></i>
+     </a>
+     <div class="container">
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#cartModal">
+    View Cart
+  </button>  
+</div>
+
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Your Shopping Cart
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Qty</th>
+              <th scope="col">Total</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/vans.png" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Vans Sk8-Hi MTE Shoes</td>
+              <td>89$</td>
+              <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+              <td>178$</td>
+              <td>
+                <a href="#" class="btn btn-danger btn-sm">
+                  <i class="fa fa-times"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table> 
+        <div class="d-flex justify-content-end">
+          <h5>Total: <span class="price text-success">89$</span></h5>
+        </div>
+      </div>
+      <div class="modal-footer border-top-0 d-flex justify-content-between">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <span class="navbar-text">
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-user"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">log in</a>
+          <a class="dropdown-item" href="#">Sign up</a>
+        </div>
+      </div>
+     </span>
+  </div>
+</nav>
+            <!--Two Column Section-->
+<span><div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <h1 class="mt-5">Built For <br>Flight</h1>
+            <p class="mt-3">Introducing curfew sneakers.<br>Our lightest shoe,ever.</p>
+            <a href="shop.html"><button class="btn btn-dark btn-lg mt-3"> SHOP</button></a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <img src="images/tk1.jpg">
+        </div>
+    </div>
+    <!-- <hr class="my-4"> -->
+    </div>
+</span>
+<!-- Shop now -->
+   <!--Two Column Section-->
+            <!--Carrousel-->
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-6">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active" ></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/sd3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p><b>Men</b></p>
+                      <a href="shop.html"><button type="button" class="btn btn-outline-light btn-lg"><b>Shop Now</b></button></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/sd3.jpg" class="d-block w-100" height="360px" alt="...">
+                    <div class="carousel-caption d-none d-md-block">     
+                       <p><b>Men</b></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/sd3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p><b>Men</b></p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+                <div class="col-md-6">
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="10000">
+                                <img src="images/sd1.jpg" class="d-block w-100 mh-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                     <p><b>Ladies</b></p>
+                                     <a href="shop.html"><button type="button" class="btn btn-outline-light btn-lg">Shop Now</button></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-interval="2000">
+                                <img src="images/sd1.jpg" class="d-block w-100 mh-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p><b>Ladies</b></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sd1.jpg" class="d-block w-100 mh-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p><b>Ladies</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!--End Of Carrousel-->
+<div class="new-releases mt-4 mb-4">
+	<h1>New Releases</h1>
+</div>
+<!--New Releases -->
+<div class="scrolling-wrapper">
+  <div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+</div>
+<!-- End of releases -->
+<div class="top-kicks" mt-4 mb-2>
+	<h1>Top Kicks</h1>
+</div>
+<!-- Start of Top Kicks -->
+<div class="scrolling-wrapper">
+  <div class="scrolling-wrapper">
+  <div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="images/tk1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hang Out Shoes</h5>
+                              <p class="card-text">Ksh 700</p>
+  </div>
+</div>
+</div>
+</div>
+<!--End of top picks -->
+<!--Never Miss-->
+<div class="never text-center mt-4 mb-2">
+	<h1>Never Miss a drop</h1>
+	<p>Receive updates about new Products and Promotions</p>
+	<button class="btn btn-outline-secondary btn-lg mt-4 mb-4"> Join Mailing List</button>  
+</div>
+            <!--End of Never Miss-->
+<!--Beginning of footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 customer">
+                <h6>MY ACCOUNT</h6>
+                <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color: white">Sign in</a>
+          </li>
+          <li>
+            <a href="#!"style="color: white">Register</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white">Order status</a>
+          </li>
+            </div>
+            <div class="col-md-2 company">
+                <h6>HELP</h6>
+                <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color: white">Shipping</a>
+          </li>
+          <li>
+            <a href="#!"style="color: white">Returns</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white">Sizing</a>
+          </li>
+        </ul>
+            </div>
+            <div class="col-md-3 dc">
+                <h6>ABOUT</h6>
+                <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color: white">Our story</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white">Media</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white">Sustainability</a>
+          </li>
+        </ul>
+            </div>
+            <div class="col-md-3 lp">
+                <h6>LEGAL STUFF</h6>
+                <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color: white">Terms of use</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white">Terms of sale</a>
+          </li>
+          <li>
+            <a href="#!" style="color: white">Privacy policy</a>
+          </li>
+        </ul>
+            </div>
+            <div class="col-md-2 nl">
+                <h6>MY ACCOUNT</h6>
+                <a href="#" class="icoRss" style="color: white"title="Rss"><i class="fa fa-rss"></i></a></li>
+				<a href="#" class="icoFacebook" style="color: white"title="Facebook"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="icoTwitter" style="color: white"title="Twitter"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="icoGoogle" style="color: white" title="Google +"><i class="fa fa-google-plus"></i></a>
+				<a href="#" class="icoLinkedin" style="color: white"title="Linkedin"><i class="fa fa-linkedin"></i></a>
+				<a href="#" class="icoLinkedin" style="color: white"title="Linkedin"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="icoLinkedin" style="color: white"title="Linkedin"><i class="fa fa-pinterest"></i></a>
+				<a href="#" class="icoLinkedin" style="color: white"title="Linkedin"><i class="fa fa-youtube"></i></a>
+            	</div>
+        </div>
+    </div>
+    <!-- Beginning of Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="color: white"> Duka store inc. All Rights Reserved</a>
+  </div>
+  <!-- End of Copyright -->
+
+</footer>
+<!--End of Footer -->
+
+<!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+  

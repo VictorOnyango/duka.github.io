@@ -1,0 +1,17 @@
+html,body{ 
+  height: 100%; 
+} 
+  
+#green{ 
+  height: 100%; 
+  background: white; 
+  text-align: center; 
+  color: black; 
+} 
+
+.footer{
+  bottom: 0;
+  width: 100%;
+  color:white;
+  background-color: black;
+}
